@@ -1,6 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Nav,Button,Navbar,NavDropdown,Form,FormControl} from 'react-bootstrap';
+import unilogo from './unilogo.jfif'
 
 const NavBar = props=>{
     return(
@@ -8,7 +9,7 @@ const NavBar = props=>{
             <Navbar bg="light" expand="lg">
             
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <img src="/dependencies/pics/uniogo.jfif" width="30" height="30" alt=""></img>
+            <img src={unilogo} alt="unilogo" width="40" height="40" alt=""></img>
             <Navbar.Collapse id="basic-navbar-nav">
             
                 <Nav className="mr-auto">
