@@ -9,12 +9,12 @@ const NavBar = props=>{
             <Navbar bg="light" expand="lg">
             
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <img src={unilogo} alt="unilogo" width="40" height="40" alt=""></img>
+            <img src={unilogo} alt="unilogo" width="40" height="40" style={{marginLeft:20}}></img>
             <Navbar.Collapse id="basic-navbar-nav">
             
                 <Nav className="mr-auto">
                 <Nav.Link href="#home">Home</Nav.Link>
-                <Nav.Link href="#link">Calendar</Nav.Link>
+                <Nav.Link href="#link" >Calendar</Nav.Link>
                 <NavDropdown title="People" id="basic-nav-dropdown">
                     <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                     <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
@@ -46,7 +46,7 @@ const NavBar = props=>{
                 </NavDropdown>
 
                 <Nav.Link href="#home">News</Nav.Link>
-                <Nav.Link href="#home">About Us</Nav.Link>
+                <Nav.Link href="#home" style={{marginLeft:700}}>About Us</Nav.Link>
                 <Nav.Link href="#home">Contact Us</Nav.Link>
                 </Nav>
                 
