@@ -14,12 +14,16 @@ import books from './books.jpg'
 const Home = props=>{
     return(
         
-        <div>
+        <div className="bg">
             <NavBar/>
 
+        
             
             <div>
-                
+                <h1 style={{color:"white",textAlign:"center",marginTop:50,fontSize:50}}>University of Peradeniya : COVID Research Group</h1>
+
+                <h1 style={{color:"white",textAlign:"center",marginTop:50,fontFamily:"Marker Felt,fantasy"}}>Welcome to the official website of the COVID Research group of the Univeristy of Peradeniya.</h1>
+
                 <Carousel>
                     <Carousel.Item>
                         <img
@@ -56,65 +60,69 @@ const Home = props=>{
                 </Carousel>
             </div>
 
-            <div class="row" style={{ marginLeft:200}}>
-                <div className="card bg-dark" >
-                    <Card style={{ width: '18rem'}}>
-                    <Card.Img variant="top" src={graphsAndTrends} alt="graphsAndTrends" />
-                    <Card.Body>
-                        <Card.Title>Graphs and Trends</Card.Title>
-                        <Card.Text>
-                        Some quick example text to build on the card title and make up the bulk of
-                        the card's content.
-                        </Card.Text>
-                        <Button variant="primary" >Click Me</Button>
-                    </Card.Body>
-                    </Card>
-                </div>
-
-                <div className="card bg-dark" style={{ marginLeft:500}}>
-                    <Card style={{ width: '18rem' }}>
-                    <Card.Img variant="top" src={news} alt="news" />
-                    <Card.Body>
-                        <Card.Title>Latest News</Card.Title>
-                        <Card.Text>
-                        Some quick example text to build on the card title and make up the bulk of
-                        the card's content.
-                        </Card.Text>
-                        <Button variant="primary">Click Me</Button>
-                    </Card.Body>
-                    </Card>
-                </div>
-                </div>
-
-                <div class="row"  style={{ marginLeft:200,marginTop:50}}>
-                
-                    <div className="card bg-dark">
-                        <Card style={{ width: '18rem' }}>
-                        <Card.Img variant="top" src={rearchCardPicHome} alt="rearchCardPicHome" />
+            <div className="mainPanel" style={{ width:1200, marginLeft:250}}>
+                <div class="row" style={{ marginLeft:100}}>
+                    <div className="card bg-dark" style={{marginTop:50}} >
+                        <Card style={{ width: '18rem'}}>
+                        <Card.Img variant="top" src={graphsAndTrends} alt="graphsAndTrends" />
                         <Card.Body>
-                            <Card.Title>Research</Card.Title>
+                            <Card.Title>Graphs and Trends</Card.Title>
                             <Card.Text>
                             Some quick example text to build on the card title and make up the bulk of
                             the card's content.
                             </Card.Text>
-                            <Button variant="primary">Click Me</Button>
+                            <Button variant="primary" >Click Me</Button>
                         </Card.Body>
                         </Card>
                     </div>
 
-                    <div className="card bg-dark" style={{ marginLeft:500}}>
+                    <div className="card bg-dark" style={{ marginLeft:400, marginTop:50}}>
                         <Card style={{ width: '18rem' }}>
-                        <Card.Img variant="top" src={books} alt="books" />
+                        <Card.Img variant="top" src={news} alt="news" />
                         <Card.Body>
-                            <Card.Title>Latest Publications</Card.Title>
+                            <Card.Title>Latest News</Card.Title>
                             <Card.Text>
                             Some quick example text to build on the card title and make up the bulk of
                             the card's content.
                             </Card.Text>
-                            <Button variant="primary">Click Me</Button>
+                            <Button variant="primary">Read More</Button>
                         </Card.Body>
                         </Card>
                     </div>
+                    </div>
+
+                    <div class="row"  style={{ marginLeft:100,marginTop:50}}>
+                    
+                        <div className="card bg-dark" >
+                            <Card style={{ width: '18rem' }}>
+                            <Card.Img variant="top" src={rearchCardPicHome} alt="rearchCardPicHome" />
+                            <Card.Body>
+                                <Card.Title>Research</Card.Title>
+                                <Card.Text>
+                                Some quick example text to build on the card title and make up the bulk of
+                                the card's content.
+                                </Card.Text>
+                                <Button variant="primary">Click Me</Button>
+                            </Card.Body>
+                            </Card>
+                        </div>
+
+                        <div className="card bg-dark" style={{ marginLeft:400}}>
+                            <Card style={{ width: '18rem' }}>
+                            <Card.Img variant="top" src={books} alt="books" />
+                            <Card.Body>
+                                <Card.Title>Latest Publications</Card.Title>
+                                <Card.Text>
+                                Some quick example text to build on the card title and make up the bulk of
+                                the card's content.
+                                </Card.Text>
+                                <Button variant="primary">Click Me</Button>
+                            </Card.Body>
+                            </Card>
+                        </div>
+
+            </div>
+            
                 </div>
                 
                 

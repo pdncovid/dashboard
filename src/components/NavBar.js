@@ -2,6 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Nav,Button,Navbar,NavDropdown,Form,FormControl} from 'react-bootstrap';
 import unilogo from './unilogo.jfif'
+import {Link} from "react-router-dom"
 
 const NavBar = props=>{
     return(
@@ -13,8 +14,8 @@ const NavBar = props=>{
             <Navbar.Collapse id="basic-navbar-nav">
             
                 <Nav className="mr-auto">
-                <Nav.Link href="#home">Home</Nav.Link>
-                <Nav.Link href="#link" >Calendar</Nav.Link>
+                <Nav.Link href="/">Home</Nav.Link>
+                <Nav.Link href="/calendar" >Calendar</Nav.Link>
                 <NavDropdown title="People" id="basic-nav-dropdown">
                     <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                     <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
@@ -37,17 +38,11 @@ const NavBar = props=>{
                     <NavDropdown.Divider />
                     <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
                 </NavDropdown>
-                <NavDropdown title="Research" id="basic-nav-dropdown">
-                    <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-                </NavDropdown>
+                <Nav.Link href="/research" >Research</Nav.Link>
 
-                <Nav.Link href="#home">News</Nav.Link>
-                <Nav.Link href="#home" style={{marginLeft:700}}>About Us</Nav.Link>
-                <Nav.Link href="#home">Contact Us</Nav.Link>
+                <Nav.Link href="/news">News</Nav.Link>
+                <Nav.Link href="/aboutUs" style={{marginLeft:700}}>About Us</Nav.Link>
+                <Nav.Link href="/contactUs">Contact Us</Nav.Link>
                 </Nav>
                 
                 

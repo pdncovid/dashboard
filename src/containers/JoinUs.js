@@ -2,7 +2,7 @@ import React from 'react';
 import NavBar from '../components/NavBar';
 import { auto } from '@popperjs/core';
 
-const People = props=>{
+const JoinUs = props=>{
     return(
         <div className="bg">
         <NavBar/>
@@ -24,4 +24,4 @@ const People = props=>{
     );
 }
 
-export default People;
+export default JoinUs;
