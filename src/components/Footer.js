@@ -1,10 +1,8 @@
-import React from 'react';
+import React from "react";
 
-
-
-const Footer = props=>{
-    return(
-      <div
+const Footer = (props) => {
+  return (
+    <div
       style={{
         // width: "100%",
         textAlign: "center",
@@ -17,8 +15,7 @@ const Footer = props=>{
       <h6>Footer</h6>
       <p>Add Details</p>
     </div>
-        
-    );
-}
+  );
+};
 
 export default Footer;
