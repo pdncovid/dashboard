@@ -1,6 +1,4 @@
 import React from 'react';
-import NavBar from '../components/NavBar';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import {Card,Button,Carousel} from 'react-bootstrap';
 import coronaVirus from './coronaVirus.png'
 import slCovidGraph from './slCovidGraph.jpg'
@@ -15,12 +13,12 @@ const Home = props=>{
     return(
         
         <div className="bg">
-            <NavBar/>
+        
 
         
             
             <div>
-                <h1 style={{color:"white",textAlign:"center",marginTop:50,fontSize:50}}>University of Peradeniya : COVID Research Group</h1>
+                <h1 style={{color:"white",textAlign:"center",fontSize:50}}>University of Peradeniya : COVID Research Group</h1>
 
                 <h1 style={{color:"white",textAlign:"center",marginTop:50,fontFamily:"Marker Felt,fantasy"}}>Welcome to the official website of the COVID Research group of the Univeristy of Peradeniya.</h1>
 
@@ -60,7 +58,7 @@ const Home = props=>{
                 </Carousel>
             </div>
 
-            <div className="mainPanel" style={{ width:1200, marginLeft:250}}>
+            <div className="mainPanel" style={{ width:1200, marginLeft:75}}>
                 <div class="row" style={{ marginLeft:100}}>
                     <div className="card bg-dark" style={{marginTop:50}} >
                         <Card style={{ width: '18rem'}}>
@@ -91,7 +89,7 @@ const Home = props=>{
                     </div>
                     </div>
 
-                    <div class="row"  style={{ marginLeft:100,marginTop:50}}>
+                    <div className="row"  style={{ marginLeft:100,marginTop:50}}>
                     
                         <div className="card bg-dark" >
                             <Card style={{ width: '18rem' }}>

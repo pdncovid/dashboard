@@ -1,11 +1,10 @@
 import React from 'react';
-import NavBar from '../components/NavBar';
-import { auto } from '@popperjs/core';
+
 
 const JoinUs = props=>{
     return(
         <div className="bg">
-        <NavBar/>
+    
 
         {/* for a margin at the top */}
         <div style={{height:50}}></div>

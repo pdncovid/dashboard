@@ -1,8 +1,7 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import {Nav,Button,Navbar,NavDropdown,Form,FormControl} from 'react-bootstrap';
+import {Nav,Navbar,NavDropdown} from 'react-bootstrap';
 import unilogo from './unilogo.jfif'
-import {Link} from "react-router-dom"
+
 
 const NavBar = props=>{
     return(
