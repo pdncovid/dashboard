@@ -1,4 +1,5 @@
 import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
 import { Card, Button, Carousel } from "react-bootstrap";
 import coronaVirus from "./coronaVirus.png";
 import slCovidGraph from "./slCovidGraph.jpg";
@@ -13,21 +14,27 @@ const Home = (props) => {
   return (
     <div className="bg">
       <div>
-        <h1 style={{ color: "white", textAlign: "center", fontSize: 50 }}>
-          University of Peradeniya : COVID Research Group
-        </h1>
-
         <h1
           style={{
             color: "white",
             textAlign: "center",
+            fontSize: 50,
+          }}
+        >
+          <b>University of Peradeniya : COVID Research Group</b>
+        </h1>
+
+        <h2
+          style={{
+            color: "white",
+            textAlign: "center",
             marginTop: 50,
-            fontFamily: "Marker Felt,fantasy",
+            fontFamily: "Comic Sans MS, cursive, sans-serif",
           }}
         >
           Welcome to the official website of the COVID Research group of the
           Univeristy of Peradeniya.
-        </h1>
+        </h2>
 
         <Carousel>
           <Carousel.Item>
@@ -79,7 +86,7 @@ const Home = (props) => {
         </Carousel>
       </div>
 
-      <div className="mainPanel" style={{ width: 1200, marginLeft: 75 }}>
+      <div className="mainPanel" style={{ width: 1200, marginLeft: 150 }}>
         <div class="row" style={{ marginLeft: 100 }}>
           <div className="card bg-dark" style={{ marginTop: 50 }}>
             <Card style={{ width: "18rem" }}>
@@ -117,7 +124,7 @@ const Home = (props) => {
           </div>
         </div>
 
-        <div className="row" style={{ marginLeft: 100, marginTop: 50 }}>
+        <div class="row" style={{ marginLeft: 100, marginTop: 50 }}>
           <div className="card bg-dark">
             <Card style={{ width: "18rem" }}>
               <Card.Img
