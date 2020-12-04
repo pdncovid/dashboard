@@ -3,7 +3,7 @@ import "./App.css";
 import Home from "./containers/Home";
 import News from "./containers/News";
 import AboutUs from "./containers/AboutUs";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Calendar from "./containers/Calendar";
 import Links from "./containers/Links";
 import Research from "./containers/Research";
@@ -16,17 +16,12 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div>
-      <NavBar />
-      <div
-        style={{
-          paddingTop: 52,
-          paddingLeft: 72,
-          paddingRight: 72,
-          height: "100vh",
-        }}
-      >
+    
+        
         <Router>
+          <div>
+          <NavBar />
+        <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/news" component={News} />
           <Route exact path="/aboutUs" component={AboutUs} />
@@ -37,10 +32,14 @@ function App() {
           <Route exact path="/people" component={People} />
           <Route exact path="/joinUs" component={JoinUs} />
           <Route exact path="/contactUs" component={ContactUs} />
+          </Switch>
+          <Footer></Footer>
+          </div>
         </Router>
-        <Footer></Footer>
-      </div>
-    </div>
+        
+        
+        
+     
   );
 }
 

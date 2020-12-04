@@ -10,6 +10,7 @@ const Footer = (props) => {
         paddingBottom: 40,
         // paddingLeft:100,
         // marginTop:150,
+        backgroundColor:"gray"
       }}
     >
       <h6>Footer</h6>
