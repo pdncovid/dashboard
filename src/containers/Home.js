@@ -8,6 +8,7 @@ import graphsAndTrends from "./graphsAndTrends.jpg";
 import rearchCardPicHome from "./rearchCardPicHome.jpg";
 import news from "./news.jpg";
 import books from "./books.jpg";
+import { Link } from 'react-router-dom';
 //import './style.css';
 
 const Home = (props) => {
@@ -101,7 +102,7 @@ const Home = (props) => {
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
                 </Card.Text>
-                <Button variant="primary">Click Me</Button>
+                <Button variant="primary" style={{marginLeft:70}}>Read More</Button>
               </Card.Body>
             </Card>
           </div>
@@ -118,7 +119,9 @@ const Home = (props) => {
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
                 </Card.Text>
-                <Button variant="primary">Read More</Button>
+                <Link to="/news">
+                <Button  type='button' style={{marginLeft:70}}>Read More</Button>
+                </Link>
               </Card.Body>
             </Card>
           </div>
@@ -138,7 +141,9 @@ const Home = (props) => {
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
                 </Card.Text>
-                <Button variant="primary">Click Me</Button>
+                <Link to="/research">
+                <Button variant="primary" style={{marginLeft:70}}>Read More</Button>
+                </Link>
               </Card.Body>
             </Card>
           </div>
@@ -152,7 +157,7 @@ const Home = (props) => {
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
                 </Card.Text>
-                <Button variant="primary">Click Me</Button>
+                <Button variant="primary" style={{marginLeft:70}}>Read More</Button>
               </Card.Body>
             </Card>
           </div>

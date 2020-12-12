@@ -18,44 +18,18 @@ const NavBar = (props) => {
           <Nav className="mr-auto">
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/calendar">Calendar</Nav.Link>
-            <NavDropdown title="People" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown>
-
-            <NavDropdown title="Links" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown>
-            <NavDropdown title="Publications" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown>
+            <Nav.Link href="/people">People</Nav.Link>
+            <Nav.Link href="/links">Links</Nav.Link>
+            <Nav.Link href="/publications">Publications</Nav.Link>
             <Nav.Link href="/research">Research</Nav.Link>
-
+            <Nav.Link href="/joinUs">Join Us</Nav.Link>
             <Nav.Link href="/news">News</Nav.Link>
-            <Nav.Link href="/aboutUs" style={{ marginLeft: 700 }}>
+            <Nav.Link href="//covid-0yl4080.slack.com">SLACK</Nav.Link>
+            <Nav.Link href="//mendeley.com/sign/in">MENDELEY</Nav.Link>
+            <Nav.Link href="//drive.google.com/drive/u/1/folders/0AAdNre7Cs_--Uk9PVA">DRIVE</Nav.Link>
+            <Nav.Link href="//medium.com/pdncovid">MEDIUM</Nav.Link>
+            
+            <Nav.Link href="/aboutUs" style={{ marginLeft: 400 }}>
               About Us
             </Nav.Link>
             <Nav.Link href="/contactUs">Contact Us</Nav.Link>
