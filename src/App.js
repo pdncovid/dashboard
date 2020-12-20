@@ -3,7 +3,7 @@ import "./App.css";
 import Home from "./containers/Home";
 import News from "./containers/News";
 import AboutUs from "./containers/AboutUs";
-import { HashRouter, BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter, BrowserRouter as Router, Route, Switch, BrowserRouter } from "react-router-dom";
 import Calendar from "./containers/Calendar";
 import Links from "./containers/Links";
 import Research from "./containers/Research";
@@ -17,7 +17,6 @@ import Footer from "./components/Footer";
 function App() {
   return (
     
-        <HashRouter basename = "/">
         
           <div>
           <NavBar />
@@ -37,8 +36,6 @@ function App() {
           
           <Footer></Footer>
           </div>
-        
-          </HashRouter>
         
         
      
