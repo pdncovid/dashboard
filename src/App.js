@@ -4,6 +4,7 @@ import Home from "./containers/Home";
 import News from "./containers/News";
 import AboutUs from "./containers/AboutUs";
 import { HashRouter, BrowserRouter as Router, Route, Switch, BrowserRouter } from "react-router-dom";
+
 import Calendar from "./containers/Calendar";
 import Links from "./containers/Links";
 import Research from "./containers/Research";
@@ -21,7 +22,7 @@ function App() {
           <div>
           <NavBar />
           
-        
+          
           <Route exact path="/" component={Home} />
           <Route path="/news" component={News} />
           <Route path="/aboutUs" component={AboutUs} />
