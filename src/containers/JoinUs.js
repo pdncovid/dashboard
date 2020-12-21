@@ -9,15 +9,15 @@ const JoinUs = (props) => {
       <div style={{ height: 50 }}></div>
 
       <div
-        className="mainPanel"
-        style={{ width: 1200, height: 1200, marginLeft: 150 }}
+        className="mainPanel container"
+        
       >
         {/* for a margin at the top of the white section */}
         <div style={{ height: 50 }}></div>
         <div style={{marginLeft:50,marginRight:50}}>
         <b>We are are always looking for enthusiastic students to join our group. Please go through our research, publications and if you come across a topic that you would like to work on, feel free to contact us.</b><br/><br/>
 
-        <Table striped bordered hover style={{width:1000,textAlign:"center",marginLeft:auto,marginRight:auto}}>
+        <Table striped bordered hover >
                     <tr>
                         <th>If you are a/an</th>
                         <th>You should</th>
@@ -46,6 +46,7 @@ const JoinUs = (props) => {
        
         </div>
       </div>
+      <div style={{ height: 50 }}></div>
     </div>
   );
 };

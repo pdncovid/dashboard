@@ -1,6 +1,5 @@
-body{
+body {
   background: #e9eaed;
-  
 }
 
 .bg {
@@ -8,13 +7,10 @@ body{
   background-image: url("containers/red.jpg");
   background-size: 100%;
   background-repeat: repeat;
-  
 }
 
-.mainPanel{
-  background-color:white;
+.mainPanel {
+  background-color: white;
   border-radius: 15px;
+  padding: 20px;
 }
-
-
-

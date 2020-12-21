@@ -7,11 +7,10 @@ const Links = (props) => {
       <div style={{ height: 50 }}></div>
 
       <div
-        className="mainPanel"
-        style={{ width: 1200, height: 1200, marginLeft: 150 }}
+        className="mainPanel container"
+        
       >
-        {/* for a margin at the top of the white section */}
-        <div style={{ height: 50 }}></div>
+        
         <div style={{marginLeft:50,marginRight:50}}>
           <h4 style={{fontFamily:"Snell Roundhand,cursive"}}>Main Links</h4>
           <ul>
@@ -67,6 +66,7 @@ const Links = (props) => {
         </div>
         
       </div>
+      <div style={{ height: 50 }}></div>
     </div>
   );
 };

@@ -10,7 +10,7 @@ const Research = props=>{
         {/* for a margin at the top */}
         <div style={{height:50}}></div>
         
-        <div className="mainPanel" style={{ width:1200,height:1200, marginLeft:150}}>
+        <div className="mainPanel container">
 
         {/* for a margin at the top of the white section */}
         <div style={{height:50}}></div>
@@ -33,6 +33,7 @@ const Research = props=>{
             
             
         </div>
+        <div style={{ height: 50 }}></div>
     </div>
     );
 }

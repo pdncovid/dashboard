@@ -1,6 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Card, Button, Carousel } from "react-bootstrap";
+import { Card, Button, Carousel,Col,Row } from "react-bootstrap";
 import coronaVirus from "./coronaVirus.png";
 import slCovidGraph from "./slCovidGraph.jpg";
 import covidWorldwide from "./covidWorldwide.jpg";
@@ -87,10 +87,10 @@ const Home = (props) => {
         </Carousel>
       </div>
 
-      <div className="mainPanel" style={{ width: 1200, marginLeft: 150 }}>
-        <div class="row" style={{ marginLeft: 100 }}>
-          <div className="card bg-dark" style={{ marginTop: 50 }}>
-            <Card style={{ width: "18rem" }}>
+      
+      <div className = "mainPanel container bg-light">
+      <Row className = "container-fluid mt-4">
+      <Card className = "container mt-4 mb-4" style={{ width: "18rem" }}>
               <Card.Img
                 variant="top"
                 src={graphsAndTrends}
@@ -105,14 +105,10 @@ const Home = (props) => {
                 <Button variant="primary" style={{marginLeft:70}}>Read More</Button>
               </Card.Body>
             </Card>
-          </div>
-
-          <div
-            className="card bg-dark"
-            style={{ marginLeft: 400, marginTop: 50 }}
-          >
-            <Card style={{ width: "18rem" }}>
-              <Card.Img variant="top" src={news} alt="news" />
+            
+          
+            <Card className = "container mt-4 mb-4" style={{ width: "18rem" }}>
+            <Card.Img variant="top" src={news} alt="news" />
               <Card.Body>
                 <Card.Title>Latest News</Card.Title>
                 <Card.Text>
@@ -124,13 +120,12 @@ const Home = (props) => {
                 </Link>
               </Card.Body>
             </Card>
-          </div>
-        </div>
+            
+            </Row>
 
-        <div class="row" style={{ marginLeft: 100, marginTop: 50 }}>
-          <div className="card bg-dark">
-            <Card style={{ width: "18rem" }}>
-              <Card.Img
+            <Row className = "container-fluid">
+      <Card className = "container mb-4" style={{ width: "18rem" }}>
+      <Card.Img
                 variant="top"
                 src={rearchCardPicHome}
                 alt="rearchCardPicHome"
@@ -146,11 +141,10 @@ const Home = (props) => {
                 </Link>
               </Card.Body>
             </Card>
-          </div>
-
-          <div className="card bg-dark" style={{ marginLeft: 400 }}>
-            <Card style={{ width: "18rem" }}>
-              <Card.Img variant="top" src={books} alt="books" />
+            
+          
+            <Card className = "container mb-4" style={{ width: "18rem" }}>
+            <Card.Img variant="top" src={books} alt="books" />
               <Card.Body>
                 <Card.Title>Latest Publications</Card.Title>
                 <Card.Text>
@@ -160,9 +154,10 @@ const Home = (props) => {
                 <Button variant="primary" style={{marginLeft:70}}>Read More</Button>
               </Card.Body>
             </Card>
-          </div>
-        </div>
-      </div>
+            
+            </Row>
+            </div>
+            <div style={{ height: 50 }}></div>
     </div>
   );
 };
