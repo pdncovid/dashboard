@@ -15,7 +15,7 @@ const Footer = (props) => {
       }}
     >
     
-    <p style={{marginLeft:150}}>Contact:<br/>
+    <p className = "ml-4">Contact:<br/>
     Prof. Janaka Ekanayake,<br/>
     Princial Investigator,<br/>
     COVID Research Group,<br/>
